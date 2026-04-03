@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Tutorial</title>
+    <script>
+        function showAlert() {
+            alert("This is a simple alert");
+        }
+
+        function showConfirm() {
+            let result = confirm("Do you want to continue?");
+            if (result) {
+                alert("You clicked OK");
+            } else {
+                alert("You clicked Cancel");
+            }
+        }
+
+        function showPrompt() {
+            let name = prompt("Enter your name:");
+            alert("Hello " + name);// string concatenation
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Creating pop-ups using javascript</h2>
+
+    <button onclick="showAlert()">Simple Alert</button>
+    <button onclick="showConfirm()">Confirm Alert</button>
+    <button onclick="showPrompt()">Prompt Alert</button>
+</body>
+
+</html>
