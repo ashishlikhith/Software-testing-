@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 
-public class AlertTest {
+public class popup {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
 
         // open the html file
-        driver.get("file:///C:/Users/Nishchal%20Gupta/Desktop/selenium-project-demo/selenium-project-demo/alerts.html");
+        driver.get("file:///workspaces/Software-testing-/html/popup.html");
 
         WebElement simpleAlertBtn = driver.findElement(By.xpath(
                 "//button[text()='Simple Alert']"));
@@ -21,7 +21,7 @@ public class AlertTest {
 
         System.out.println(alert.getText());
         Thread.sleep(2000);
-
+            
         alert.accept();// Clicks on OK
 
     }
